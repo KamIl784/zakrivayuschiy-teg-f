@@ -1,1 +1,12 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --main-text: 'Inter';
+    --accent-text: 'PressStart2P';
+    --weight-slim: 400;
+    --weight-fat: 465;
+    --bg-color: #fff;
+    --accent-color: #000;
+    --gradient: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(255 255 255 / 0) 2px 4px), repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(255 255 255 / 0) 2px 4px), repeating-linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
+    --color-contour: red;
+    --color-sparks: red;
+}
