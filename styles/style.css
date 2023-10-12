@@ -37,7 +37,7 @@
   margin-block-start: 102px;
   max-width: 696px;
   min-height: 364px;
-  height: minmax(323px, 364px);
+  height: 364px;
   font-family: var(--accent-text);
   background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
@@ -52,6 +52,8 @@
 }
 
 .project {
+  font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
+  text-transform: uppercase;
   margin-block: 20px;
 }
 
@@ -124,11 +126,6 @@
   font-size: 18px;
   min-height: 31px;
   font-weight: var(--weight-fat);
-}
-
-.project {
-  font-size: 23px;
-  text-transform: uppercase;
 }
 
 .main {
@@ -296,8 +293,8 @@
 }
 
 .card__like-button:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
   transition: 0.3s;
 }
 
@@ -329,6 +326,13 @@
   margin-block-end: 105px;
 }
 
+.memory_button:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  fill: var(--accent-color);
+  transition: 0.3s;
+}
+
 .memory_button:focus {
   outline: none;
   box-shadow: 2px 2px 0px 0px var(--accent-color);
@@ -338,7 +342,14 @@
 .modal-window {
   margin: auto;
   box-sizing: border-box;
-  color: var(--accent-text);
+  color: var(--accent-color);
+  padding: 0;
+  border: 2px solid var(--accent-color);
+}
+
+.modal-window::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+  backdrop-filter: blur(7px);
 }
 
 .modal-window-content {
@@ -360,11 +371,7 @@
 
 .modal-window_container {
   background-color: var(--bg-color);
-  position: fixed;
-  top: 383px;
-  left: 542px;
   padding: 32px;
-  border: 2px solid var(--accent-color);
   min-width: 357px;
   min-height: 193px;
 }
@@ -382,17 +389,13 @@
   width: 293px;
 }
 
-.modal-window::backdrop {
-  background-color: rgb(0 0 0 / 0.75);
-  backdrop-filter: blur(7px);
-}
-
 .modal-text {
   font-family: var(--accent-text);
   font-size: 14px;
   font-weight: var(--weight-slim);
   text-transform: uppercase;
   word-break: normal;
+  color: var(--accent-color);
 }
 
 .modal-window_text {
@@ -423,14 +426,5 @@
     border: 2px solid var(--accent-color);
     min-width: 306px;
     min-height: 80px;
-  }
-}
-
-@keyframes translate {
-  0% {
-    left: -10px;
-  }
-  100% {
-    left: -14px;
   }
 }
