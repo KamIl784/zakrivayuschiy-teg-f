@@ -16,8 +16,8 @@
    </head>
    <body class="page">
       <header class="header">
-         <h1 class="title">&lt;/HTML&gt;</h1>
-         <p class="project">Закрывающий тег</p>
+         <a href="#0" class="title">&lt;/HTML&gt;</a>
+         <h1 class="project">Закрывающий тег</h1>
          <nav class="theme-menu header__theme-menu">
             <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
             <ul class="theme-menu__list">
@@ -116,7 +116,7 @@
                   </svg>
                </button>
                <button class="card__like-button">
-               <span class="button__text">Like</span>
+               <span class="button__text button__like-text">Like</span>
                <span class="hover_like"></span>    
                </button>
             </div>
@@ -153,7 +153,7 @@
                   </svg>
                </button>
                <button class="card__like-button">
-               <span class="button__text">Like</span>
+               <span class="button__text button__like-text">Like</span>
                <span class="hover_like"></span>    
                </button>
             </div>
@@ -190,7 +190,7 @@
                   </svg>
                </button>
                <button class="card__like-button">
-               <span class="button__text">Like</span>
+               <span class="button__text button__like-text">Like</span>
                <span class="hover_like"></span>    
                </button>
             </div>
@@ -227,7 +227,7 @@
                   </svg>
                </button>
                <button class="card__like-button">
-               <span class="button__text">Like</span>
+               <span class="button__text button__like-text">Like</span>
                <span class="hover_like"></span>    
                </button>
             </div>
@@ -264,7 +264,7 @@
                   </svg>
                </button>
                <button class="card__like-button">
-               <span class="button__text">Like</span>
+               <span class="button__text button__like-text">Like</span>
                <span class="hover_like"></span>    
                </button>
             </div>
@@ -301,7 +301,7 @@
                   </svg>
                </button>
                <button class="card__like-button">
-               <span class="button__text">Like</span>
+               <span class="button__text button__like-text">Like</span>
                <span class="hover_like"></span>    
                </button>
             </div>
@@ -338,7 +338,7 @@
                   </svg>
                </button>
                <button class="card__like-button">          
-               <span class="button__text">Like</span>
+               <span class="button__text button__like-text">Like</span>
                <span class="hover_like"></span>    
                </button>
             </div>
@@ -346,11 +346,12 @@
          <button class="save_button button__text"
             onclick="window['dialog'].showModal();"
             aria-controls="dialog">
-            <svg width="28" height="28" viewBox="0 0 21 21">
-               <use href="svg/icon.svg#icon">
-            </svg>
-            Сохранить на память
-            <span class="hover_like_save"></span>
+            <span class="save-button__text">
+               <svg class="icon_save" width="21" height="21" viewBox="0 0 21 21">
+                  <use href="svg/icon.svg#icon">
+               </svg>
+               Сохранить на память
+            </span>
          </button>
          <dialog class="modal-window" id="dialog">
             <div class="modal-window_container">
@@ -362,7 +363,8 @@
                </div>
                <form method="dialog">
                   <button class="close-button">
-                  <span class="modal-text">ok</span>
+                  <span class="modal-text_button modal-text">ok</span>
+                  <span class="hover_close-button"></span>
                   </button>
                </form>
             </div>
